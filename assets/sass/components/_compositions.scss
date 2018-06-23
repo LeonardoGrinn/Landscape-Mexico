@@ -1,0 +1,68 @@
+.composition {
+  position: relative; //acording refrence.
+  &__photo {
+    width: 55%; //Note: alway use a percentage for widht position and images.
+    box-shadow: 0 1.5rem 4rem rgba($color-black, -4);
+    border-radius: 2px;
+    position: absolute; //put the element acording to a reference.
+    z-index: 10; //Less z-index means the element appear in front.
+    transition: all .2s;
+    outline-offset: 2rem;
+
+    /* Portrait tablet */
+    @include respond(tab-port) {
+      float: left;
+      border-radius: 0px;
+      position: relative;
+      width: 33.3333%;
+      box-shadow: 0 1.5rem 3rem rgba($color-black, -2);
+    }
+
+    /* Phone */
+    @include respond(phone) {
+      display: none;
+    }
+    &--p1 {
+      top: -2rem;
+      left: 0;
+
+      @include respond(tab-port) {
+        top: 1rem;
+        transform: scale(1.2);
+      }
+    }
+
+    &--p2 {
+      top: 3rem;
+      right: 0;
+
+      @include respond(tab-port) {
+        top: -1rem;
+        transform: scale(1.3);
+        z-index: 100;
+      }
+    }
+
+    &--p3 {
+      top: 10rem;
+      left: 20%; //use percentage no a static position.
+
+      @include respond(tab-port) {
+        left: 0;
+        top: 1rem;
+        transform: scale(1.2);
+      }
+    }
+
+    &:hover {
+      outline: 1.5rem solid $color-primary-dark;
+      transform: scale(1.05) translateY(-.5rem);
+      box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+      z-index: 20; //higher z-index means the element appear in front.
+    }
+  }
+
+  &:hover &__photo:not(:hover) {
+    transform: scale(.95);
+  }
+}

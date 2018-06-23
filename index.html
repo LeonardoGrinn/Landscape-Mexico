@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/icon-font.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+
+  <title>Natours | Exciting tours for adventurous people</title>
+</head>
+
+<body>
+
+  <!-- ====================== NAVIGATION ====================== 
+  <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+    <label for="navi-toggle" class="navigation__button">
+      <span class="navigation__icon">&nbsp;</span>
+    </label>
+
+    <div class="navigation__background">&nbsp;</div>
+
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+          <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Natours</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your benefits</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular Tours</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book now</a></li>
+      </ul>
+    </nav>
+  </div> -->
+
+  <!-- ====================== HEADER SECTION ====================== -->
+  <header class="header">
+    <div class="header__logo-box">
+      <img src="assets/img/logo-white.png" alt="Logo" class="header__logo"> <!--Under score for elements + name of the element-->
+    </div>
+
+    <div class="header__text-box">
+      <h1 class="heading-primary">
+          <span class="heading-primary--main">Outdoors</span> <!-- two dashes for modifiers + name of the element-->
+          <span class="heading-primary--sub">is where life happens</span>
+      </h1>
+    </div>
+  </header> <!-- ./header-section -->
+
+  <!-- ====================== MAIN SITE CONTENT ====================== -->
+  <main> <!-- tells search engines this is the main part of the site. -->
+
+    <!-- ====================== ABOUT SECTION ====================== -->
+    <section class="section-about">
+      <div class="u-center-text u-margin-bottom-big">
+        <!-- "u" utility house -->
+        <h2 class="heading-secondary">
+            Conoce nuestra empresa
+          </h2>
+      </div>
+
+      <div class="row">
+
+        <div class="col-1-of-2">
+          <h3 class="heading-tertiary u-margin-bottom-small">quienes somos</h3>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu
+          </p>
+
+          <h3 class="heading-tertiary u-margin-bottom-small">nuestra misión</h3>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+          </p>
+        </div>
+
+        <div class="col-1-of-2">
+          <div class="composition">
+
+            <img srcset="assets/img/nat-1.jpg 300w, assets/img/nat-1-large.jpg 1000w" alt=""
+              sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 1"
+              class="composition__photo composition__photo--p1"
+              src="img/nat-1-large.jpg">
+
+            <img srcset="assets/img/nat-2.jpg 300w, assets/img/nat-2-large.jpg 1000w" alt=""
+              sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 2"
+              class="composition__photo composition__photo--p2"
+              src="img/nat-2-large.jpg">
+
+            <img srcset="assets/img/nat-3.jpg 300w, assets/img/nat-3-large.jpg 1000w" alt=""
+              sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 3"
+              class="composition__photo composition__photo--p3"
+              src="assets/img/nat-3-large.jpg">
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- ./about-section -->
+
+    <!-- ====================== GALLERY SECTION ====================== -->
+    <section class="section-gallery">
+      <div class="u-center-text u-margin-bottom-big">
+        <!-- "u" utility house -->
+        <h2 class="heading-secondary">
+          PROYECTOS DESTACADOS
+        </h2>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-4">
+          Gallery thumbnail
+        </div>
+        <div class="col-3-of-4">
+          Gallery image displayer
+        </div>
+      </div>
+    </section> <!-- ./features section -->
+
+    <!-- ====================== CONTACT SECTION ====================== -->
+    <section class="section-contact" id="section-tours">
+      <div class="u-center-text u-margin-bottom-medium">
+        <!-- "u" utility house -->
+        <h2 class="heading-secondary-white">
+            PONTE EN CONTACTO
+        </h2>
+      </div>
+
+      <div class="row">
+ 
+        <div class="form">
+          <form id="form__contact" class="form-horizontal" method="post" class="form-horizontal" action="ajaxSubmit.php">
+
+            <div class="form__inputs">
+              <div class="form__group">
+                <input type="text" class="form-control" placeholder=" nombre completo" name="nombre" required>
+              </div>
+
+              <div class="form__group">
+                <input type="email" class="form-control" placeholder=" correo electrónico" name="email" required>
+              </div>
+            </div>
+
+            <div class="form__group">
+              <textarea class="form-control" rows="8" placeholder=" mensaje" name="mensaje" width="98%" required></textarea>
+            </div>
+
+            <div class="form__action">
+              <div class="form__info">
+                <p>
+                  <span><img src="assets/img/icons/mail.svg" alt="mail-contact"></span> contacto@landscapemexico.com
+                </p>
+                <p>
+                  <span><img src="assets/img/icons/whatsapp.png" alt="Whatsapp"></span> Whatsapp +52 33 1720 8651
+                </p>
+              </div>
+
+              <div class="form__group form__send">
+                <button type="submit" class="boton">Enviar</button>
+              </div>
+              
+            </div>
+
+          </form>
+        </div><!-- form -->
+
+        <div class="social">
+          <div></div>
+          <div class="social__icons">
+            <a href="#" target="_blank"><img src="assets/img/icons/facebook.svg" alt="Facebook"></a>
+            <a href="#" target="_blank"><img src="assets/img/icons/instagram.svg" alt="Instagram"></a>
+            <a href="#" target="_blank"><img src="assets/img/icons/linkedin.svg" alt="LinkedIn"></a>
+            <a href="#" target="_blank"><img src="assets/img/icons/pinterest.svg" alt="Pinterest"></a>
+            <a href="#" target="_blank"><img src="assets/img/icons/youtube.svg" alt="Youtube"></a>
+            <a href="#" target="_blank"><img src="assets/img/icons/google.svg" alt="Google+"></a>
+          </div>
+          <div></div>
+        </div>
+
+      </div> <!-- ./row -->
+    </section>
+  </main>
+  <!-- ====================== FOOTER SECTION ====================== -->
+  <center class="footer">MMXXVII Landscape México | © Copyright 2018 <a href="http://leonardogrinn.com/" target="_blank">Leonardo Grinn</a>.</center>
+
+  <!-- ========================== GRID SYSTEM ===================================================
+  <section class="grid-test">
+
+    <div class="row">
+
+      <div class="col-1-of-2">
+        Col 1 of 2
+      </div>
+
+      <div class="col-1-of-2">
+        Col 1 of 2
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-1-of-3">
+        Col 1 of 3
+      </div>
+
+      <div class="col-1-of-3">
+        Col 1 of 3
+      </div>
+
+      <div class="col-1-of-3">
+        Col 1 of 3
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-1-of-3">
+        Col 1 of 3
+      </div>
+
+      <div class="col-2-of-3">
+        Col 2 of 3
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-1-of-4">
+        Col 1 of 4
+      </div>
+
+      <div class="col-1-of-4">
+        Col 1 of 4
+      </div>
+
+      <div class="col-1-of-4">
+        Col 1 of 4
+      </div>
+
+      <div class="col-1-of-4">
+        Col 1 of 4
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-1-of-4">
+        Col 1 of 4
+      </div>
+
+      <div class="col-1-of-4">
+        Col 1 of 4
+      </div>
+
+      <div class="col-2-of-4">
+        Col 2 of 4
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-1-of-4">
+        Col 1 of 4
+      </div>
+      <div class="col-3-of-4">
+        Col 3 of 4
+      </div>
+    </div>
+
+  </section>
+  =================================================================================  -->
+</body>
+
+</html>
