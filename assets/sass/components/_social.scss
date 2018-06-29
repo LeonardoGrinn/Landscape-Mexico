@@ -18,6 +18,11 @@
             padding: 3rem 20% 0 25%;
         }
 
+        @include respond(phone) {
+            top: 1rem; //transform: scale(1.5);
+            padding: 3rem 0% 0 5%;
+        }
+
         img {
             width: 75%;
             transition: all ease 0.2s;

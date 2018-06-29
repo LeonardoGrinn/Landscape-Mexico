@@ -71,12 +71,22 @@
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr;
+
+        @include respond(phone) {
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(2, 1fr);
+        }
     }
 
     &__info {
         color: $color-white;
         font-size: 1.5rem;
         margin-top: -2rem;
+
+        @include respond(phone) {
+            text-align: center;
+            font-size: 1.7rem;
+        }
 
         p:last-child {
             margin-top: -0.5rem;
@@ -86,16 +96,27 @@
             @include respond(tab-port) {
                 margin-bottom: 3rem;
             }
+
+            @include respond(phone) {
+                margin-top: 0rem;
+            }
         }
 
         img {
             width: 5%;
             transform: translateY(35%);
             margin-right: 1rem;
+
+            @include respond(phone) {
+                display: none;
+            }
         }
     }
 
     &__send {
+        @include respond(phone) {
+            grid-row: 1;
+        }
         button {
             float: right;
             background-color: transparent;

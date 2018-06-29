@@ -69,5 +69,9 @@
     left: 50%; /* 50% in relation of the parent element */
     transform: translate(-50%, -50%); /* separate his position of the parent element */
     text-align: center;
+
+    @include respond(phone) {
+      top: 50%;
+    }
   }
 }

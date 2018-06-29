@@ -12,11 +12,17 @@
 /* ************* A B O U T  S E C T I O N ************* */
 .section-about {
   background-color: $color-grey-light-1;
-  padding: 20rem 0;
+  padding: 20rem 5rem;
   margin-top: -20vh;
 
   p {
     margin-bottom: 4rem;
+  }
+
+  @include respond(tab-land) {
+    h2 {
+      margin-top: 8rem;
+    }
   }
 
   @include respond(tab-port) {
@@ -25,7 +31,7 @@
   }
 
   @include respond(phone) {
-    
+    padding: 20rem 2rem;
   }
   
 }
@@ -49,10 +55,14 @@
 
   @include respond(tab-port) {
     padding: 10rem 0;
-    transform: skewy(-5deg); //Seven degress effect.
+    transform: skewy(-7deg); //Seven degress effect.
     & > * { //afect direct child.
       transform: skewY(7deg); //Seven degress neutralize effect.
     }
+  }
+
+  @include respond(phone) {
+    padding: 12rem 2.5rem 20rem 2.5rem;
   }
 }
 /* ************* C O N T A C T  S E C T I O N ************* */

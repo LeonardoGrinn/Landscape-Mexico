@@ -40,7 +40,7 @@ body {
 
     @include respond(phone) { //Width < 1200?
       letter-spacing: 1rem;
-      font-family: 5rem;
+      font-size: 5rem;
     }
 
     /*

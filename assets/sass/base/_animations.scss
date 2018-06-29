@@ -44,3 +44,32 @@
     transform: translate(0);
   }
 }
+
+
+/* ============= G A L L E R Y ============= */
+
+.transition-fadeIn {
+  animation: fadeIn 1s;
+}
+
+.transition-fadeInPersist {
+  animation: fadeInPersist 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInPersist {
+  to {
+    opacity: 1;
+  }
+  from {
+    opacity: 0;
+  }
+}
