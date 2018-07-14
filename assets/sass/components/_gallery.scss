@@ -33,7 +33,7 @@
         overflow: auto;
         margin-left: 2.5vw;
         margin-top: 0%;
-        height: 70%;
+        height: 35%;
 
         /* Portrait tablet */
         @include respond(tab-port) {
@@ -73,7 +73,7 @@
         /* align horizontal */
         align-items: center;
         /* align vertical */
-        height: 70%;
+        height: 35%;
     }
 }
 
