@@ -426,7 +426,7 @@ body {
     overflow: auto;
     margin-left: 2.5vw;
     margin-top: 0%;
-    height: 35%;
+    transform: translateY(-0.1rem);
     /* Portrait tablet */ }
     @media only screen and (max-width: 56.25em) {
       .gallery__thumbnail {
@@ -454,8 +454,7 @@ body {
     justify-content: center;
     /* align horizontal */
     align-items: center;
-    /* align vertical */
-    height: 35%; }
+    /* align vertical */ }
 
 .visor--img {
   width: 100%;
@@ -463,9 +462,6 @@ body {
   /* Quick fix to align thumnail & displayer */
   cursor: pointer;
   /* Portrait tablet */ }
-  @media only screen and (max-width: 56.25em) {
-    .visor--img {
-      margin-top: 11%; } }
 
 @media only screen and (max-width: 37.5em) {
   .visor--mobile {
@@ -495,16 +491,16 @@ body {
     .arrow {
       width: 4vw; }
       .arrow__next {
-        transform: translate(100%, 80%); }
+        transform: translate(100%, 10%); }
       .arrow__preview {
-        transform: translate(-100%, 80%); } }
+        transform: translate(-100%, 10%); } }
   @media only screen and (max-width: 37.5em) {
     .arrow {
       width: 5.5vw; }
       .arrow__next {
-        transform: translate(44.5vw, 150%); }
+        transform: translate(44.5vw, 10%); }
       .arrow__preview {
-        transform: translate(-45vw, 150%); } }
+        transform: translate(-45vw, 10%); } }
 
 /* ============= F U L L  V I E W ============= */
 .full__view {
@@ -532,7 +528,8 @@ body {
     /* Portrait tablet */ }
     @media only screen and (max-width: 56.25em) {
       .full__view .visor--img {
-        width: 85vh; } }
+        width: 85vh;
+        margin-top: 11%; } }
     @media only screen and (max-width: 37.5em) {
       .full__view .visor--img {
         width: 140vw; } }
@@ -1034,7 +1031,9 @@ body {
         transform: skewY(7deg); } }
   @media only screen and (max-width: 37.5em) {
     .section-gallery {
-      padding: 12rem 2.5rem 20rem 2.5rem; } }
+      padding: 12rem 2.5rem 20rem 2.5rem; }
+      .section-gallery h2 {
+        margin-bottom: 1.5rem; } }
 
 /* ************* C O N T A C T  S E C T I O N ************* */
 .section-contact {

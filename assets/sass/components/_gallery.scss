@@ -33,8 +33,8 @@
         overflow: auto;
         margin-left: 2.5vw;
         margin-top: 0%;
-        height: 35%;
-
+        //height: 35%;
+        transform: translateY(-0.1rem);
         /* Portrait tablet */
         @include respond(tab-port) {
             display: none;
@@ -73,7 +73,7 @@
         /* align horizontal */
         align-items: center;
         /* align vertical */
-        height: 35%;
+        //height: 35%;
     }
 }
 
@@ -86,7 +86,7 @@
     /* Portrait tablet */
 
     @include respond(tab-port) {
-        margin-top: 11%;
+        //margin-top: 11%;
     }
 }
 
@@ -128,22 +128,22 @@
         width: 4vw;
 
         &__next {
-            transform: translate(100% ,80%);
+            transform: translate(100% ,10%);
         }
 
         &__preview {
-            transform: translate(-100%, 80%);
+            transform: translate(-100%, 10%);
         }
     }
 
     @include respond(phone) {
         width: 5.5vw;
         &__next {
-            transform: translate(44.5vw, 150%);
+            transform: translate(44.5vw, 10%);
         }
 
         &__preview {
-            transform: translate(-45vw, 150%);
+            transform: translate(-45vw, 10%);
         }
     }
 }
@@ -178,6 +178,7 @@
 
             @include respond(tab-port) {
                 width: 85vh;
+                margin-top: 11%;
             }
 
             @include respond(phone) {

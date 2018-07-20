@@ -63,6 +63,9 @@
 
   @include respond(phone) {
     padding: 12rem 2.5rem 20rem 2.5rem;
+    h2 {
+      margin-bottom: 1.5rem;
+    }
   }
 }
 /* ************* C O N T A C T  S E C T I O N ************* */
